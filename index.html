@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Sederhana</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Space Mono', sans-serif;
+            text-transform: capitalize;
+        }
+
+        .container {
+            height: 100vh;
+            width: 940px;
+            margin: auto;
+        }
+
+        header nav h1 {
+            font-size: 2rem;
+        }
+
+        header nav {
+            /* margin-top: 10px; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header nav ul {
+            display: flex;
+            width: 40%;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        header nav ul li {
+            list-style: none;
+            padding-right: 10px;
+            border-right: 1px solid black;
+        }
+
+        /* header nav ul li:nth-child(n+2) {
+            padding-left: 5px;
+        } */
+
+        header nav ul li:nth-child(5) {
+            padding: 0;
+            border: none;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #000;
+            /* font-size: 1.1rem; */
+        }
+
+        header .hero-image {
+            margin-top: 5px;
+            width: 100%;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        main .content {
+            width: 60%;
+            /* flex-grow: 1.5; */
+            padding: 20px 20px 30px 20px;
+        }
+
+        main p {
+            margin-top: 20px;
+        }
+
+        main .author-profile {
+            padding: 20px 20px 30px 20px;
+            /* flex-grow: 1; */
+            width: 40%;
+        }
+
+        main .author-profile .wrapper {
+            margin-top: 10px;
+        }
+
+        main .author-profile .wrapper img {
+            margin-right: 15px;
+            float: left;
+        }
+
+        footer {
+            background: #000;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <h1>My Website</h1>
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">products</a></li>
+                    <li><a href="#">service</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+            <img src="alola.jpg" class="hero-image">
+        </header>
+        <main>
+            <div class="content">
+                <h1>Judul Artikel</h1>
+                <h5>ditulis oleh lasra pada 1 januari 2021</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita animi eius illum reiciendis quo
+                    minima distinctio nam. Suscipit, error placeat eligendi molestias, voluptate at voluptas quia ad,
+                    delectus omnis nobis!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, maiores id praesentium consectetur
+                    sequi ut voluptatum assumenda quibusdam reiciendis quo vitae quisquam, cum soluta enim suscipit,
+                    deserunt fugiat ipsa ullam.Inventore in rem incidunt sapiente. In expedita veritatis maiores
+                    obcaecati molestiae alias autem vel, placeat minus fugit dolores corrupti similique, quasi sed
+                    voluptates nesciunt vitae numquam pariatur voluptatibus est molestias?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ullam temporibus excepturi, eius
+                    impedit labore quam minima quaerat ipsam facilis aut at dolorum nisi reprehenderit ratione, eligendi
+                    qui perferendis tempora?Blanditiis tempore dolorum, porro consequatur autem, dolor dolorem quasi
+                    nostrum optio ullam tenetur commodi? Vero, vel cum soluta illum illo repellendus molestias voluptate
+                    dolor error culpa nisi dolores obcaecati optio.</p>
+            </div>
+            <div class="author-profile">
+                <h3>tentang penulis</h3>
+                <div class="wrapper">
+                    <img src="suiren.jpg" width="100">
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In aut minus saepe aperiam maxime
+                        architecto perspiciatis temporibus, modi dolor neque cupiditate dolorem voluptate incidunt nam
+                        magnam inventore fuga tenetur autem.
+                        Nisi delectus alias libero fugiat magnam sit mollitia illo quod a. Vel eveniet numquam tempore
+                        vero?
+                        Provident, ipsa eaque. Quis ipsum voluptas vero iusto, corporis obcaecati cum et accusantium
+                        aperiam.
+                        Doloribus ipsam perferendis dignissimos at sint vel commodi nemo illo impedit nihil, nisi quae
+                        id</span>
+                </div>
+
+            </div>
+        </main>
+        <footer>copyright &copy;<script>
+                document.write(new Date().getFullYear());
+            </script> lasra all right reserved.</footer>
+    </div>
+</body>
+
+</html>
